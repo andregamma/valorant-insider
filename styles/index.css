@@ -1,4 +1,4 @@
-@import './button.css';
+@import "./button.css";
 
 /* purgecss start ignore */
 @tailwind base;
@@ -7,19 +7,27 @@
 @tailwind utilities;
 
 .hero {
-  width: 100%;
-  color: #333;
+  background-image: url("https://theme.zdassets.com/theme_assets/43400/387e0b6f7a6e41c0177874792c6648d51eb99830.jpg");
+  height: 438px;
+  background-size: cover;
 }
 
-.title {
-  margin: 0;
+.hero-module {
   width: 100%;
-  padding-top: 80px;
-  line-height: 1.15;
-  font-size: 48px;
+  padding-top: 5rem;
 }
 
-.title,
-.description {
-  text-align: center;
+@media (min-width: 768px) {
+  .hero-module {
+    height: 100%;
+    width: 32.5rem;
+    margin-left: calc(100% - 32.5rem);
+    padding-top: 5rem;
+  }
+}
+
+.char-cover {
+  background-image: url("https://www.freemmostation.com/wp-content/uploads/2020/04/Valorant-3.jpg");
+  background-size: cover;
+  height: 20rem;
 }
